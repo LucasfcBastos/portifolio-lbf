@@ -1,0 +1,30 @@
+.fixed-top {
+    background-color: white;
+    text-align: center;
+    align-content: end;
+    width: 100vw;
+    height: 75px;
+}
+
+.fixed-top img {
+    width: 40px;
+    height: auto;
+}
+
+.menu-list {
+    align-content: center;
+    width: 50px;
+    height: 600px;
+}
+
+.menu-list li {
+    margin-left: -31px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    list-style-type: none;
+}
+
+.menu-list li circle{
+    cursor: pointer;
+}

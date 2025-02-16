@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - LBF</title>
+    <style>
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+            background-color: #0a0a0a;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            z-index: 1;
+        }
+
+        main {
+            z-index: 0;
+        }
+
+        p,
+        button {
+            text-transform: uppercase;
+        }
+
+        .fixed {
+            background-color: #ffffff;
+            text-align: center;
+            width: 100vw;
+            height: 50%;
+        }
+
+        .fixed img {
+            margin-top: 5px;
+            width: 40px;
+            height: auto;
+        }
+
+        .menu {
+            align-content: center;
+            width: 50px;
+            height: 600px;
+        }
+
+        .menu li {
+            height: 25px;
+            margin-left: -29px;
+            margin-bottom: 10px;
+            list-style-type: none;
+        }
+
+        .menu li circle{
+            cursor: pointer;
+        }
+
+        main.top {
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            display: flex;
+        }
+
+        main.top img {
+            position: absolute;
+            margin-left: 75px;
+            width: 450px;
+            height: 450px;
+        }
+
+        main.top .text {
+            color: white;
+            position: absolute;
+            right: 0px;
+            margin-right: 75px;
+            width: 450px;
+            height: 450px;
+            text-align: center;
+            align-content: center;
+        }
+
+        main.top2 {
+            background-color: yellow;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="fixed">
+            <img src="/icon.svg">
+        </div>
+        <div class="menu">
+            <ul>
+                <!--TOP-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="white" />
+                    </svg>
+                </li>
+                <!--ABOUT-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+                <!--TRAINENG-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+                <!--COURSES-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+                <!--PROJECTS-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+                <!--KNOWLEDGE-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+                <!--CONTACT-->
+                <li>
+                    <svg width="35" height="35">
+                        <circle cx="13" cy="13" r="7" stroke="white" stroke-width="3" fill="transparent" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="top">
+        <img src="/photo.png">
+        <div class="text">
+            <p>Lucas Bastos Franco</p>
+            <p>Engenharia de Software</p>
+            <button>Download do Meu Currículo Aqui</button>
+        </div>
+    </main>
+    <main class="top2">
+        <img style="width: 450px; height: 450px;" src="/photo.png">
+        <div class="text">
+            <p>Lucas Bastos Franco</p>
+            <p>Engenharia de Software</p>
+            <button>Download do Meu Currículo Aqui</button>
+        </div>
+    </main>
+</body>
+</html>
