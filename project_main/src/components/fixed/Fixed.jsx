@@ -1,5 +1,6 @@
 import './Fixed.css'
 import Icon from '../svg/then.svg'
+import Config from '../svg/config.svg'
 
 function App() {
     return (
@@ -24,6 +25,18 @@ function App() {
                         </svg>
                     </li>
                 </ul>
+            </div>
+            <div class="button-config">
+                <div>
+                    <button className='menu'>
+                        <img src={Config}></img>
+                    </button>
+                </div>
+                <div>
+                    <button className='config'>
+                        <img src={Config}></img>
+                    </button>
+                </div>
             </div>
         </>
     )

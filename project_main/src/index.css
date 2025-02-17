@@ -3,4 +3,6 @@ body {
   margin-left: 0px;
   background-color: #0a0a0a;
   overflow-x: hidden;
+  color: white;
+  font-weight: bolder;
 }
