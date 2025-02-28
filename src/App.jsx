@@ -8,6 +8,7 @@ import ImgPixel from './components/img_pixel/ImgPixel.jsx'
 import PrintDisplay from './components/print_display/PrintDisplay.jsx'
 import Evaluation from './components/evaluation/Evaluation.jsx'
 import Certificates from './components/certificates_/Certificates.jsx'
+import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
 
@@ -70,6 +71,7 @@ function App() {
         </div>
         <div className='text_and_anim'>
           <p className='camp text'>I currently have around {number_certificates} certifications and I'm always looking for more knowledge. I have certifications from UniEVANGÉLICA, Microsoft, Scrumstudy, Dio and Bradesco and many others. I'm always looking for new knowledge to grow as an engineer and to help my team develop projects.</p>
+          <SouthAnimation />
         </div>
       </div>
     </>
