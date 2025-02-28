@@ -70,3 +70,8 @@ div#traineng .reviews {
     justify-content: center;
     gap: 5vw;
 }
+
+div#courses .list{
+    width: 100%;
+    justify-items: center;
+}

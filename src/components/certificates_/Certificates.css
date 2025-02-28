@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+.camp_cert{
+    display: flex;
+    width: 65vw;
+    margin-bottom: 3vw;
+    gap: 15px;
+}
+
+.camp_cert img {
+    background-color: hsl(0, 0%, 100%);
+    width: 16.5vw;
+    height: 16.5vw;
+    border-radius: 2vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.camp_cert img:hover {
+    background-color: hsl(0, 0%, 75%);
+}
+
+.camp_cert .text {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1.5vw;
+}
+
+.camp_cert .text p.margin {
+    margin-bottom: 2.3vw;
+}
