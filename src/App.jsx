@@ -11,6 +11,7 @@ import Certificates from './components/certificates_/Certificates.jsx'
 import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
 import InstButton from './components/inst_button/InstButton.jsx'
 import GitButton from './components/git_button/GitButton.jsx'
+import ListPositions from './components/list_positions/ListPositions.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
 import ByteOdonto from './components/img/Perfil - BD.png'
@@ -24,6 +25,47 @@ function App() {
 
   const number_certificates = 13
 
+  const toolsPO = [
+    { text: "trello", img: "https://cdn-icons-png.flaticon.com/512/174/174874.png" },
+    { text: "miro", img: "https://files.readme.io/17d4a23-miro-logo-color-square.png" }, 
+    { text: "word", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019–present%29.svg/2203px-Microsoft_Office_Word_%282019–present%29.svg.png" },
+    { text: "excel", img: "https://static.vecteezy.com/system/resources/thumbnails/027/179/363/small/microsoft-excel-icon-logo-symbol-free-png.png" }, 
+    { text: "scrum", img: "https://cdn-icons-png.flaticon.com/512/8553/8553379.png" }, 
+    { text: "bizagi", img: "https://www.baixesoft.com/wp-content/uploads/2017/06/Bizagi-Modeler-icone.png" },
+  ];
+  
+  const toolsPD = [
+    { text: "figma", img: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png" },
+    { text: "power", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAqBiy1t9XTIN9GMa25sQHutx9lRPIrvW1hg&s" }, 
+    { text: "miro", img: "https://files.readme.io/17d4a23-miro-logo-color-square.png" },
+  ];
+
+  const toolsDFE = [
+    { text: "html", img: "https://cdn4.iconfinder.com/data/icons/iconsimple-programming/512/html-512.png" },
+    { text: "css", img: "https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-programming-langugae-language-pack-logos-icons-1175237.png?f=webp&w=256" },
+    { text: "js", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwL--h8BE2ZUahfb8Tj0RDno-V65VMe79-CA&s" },
+    { text: "react", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" },
+    { text: "github", img: "https://cdn-icons-png.flaticon.com/512/25/25231.png" },
+    { text: "git", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT1MO4Ln0Ynz4VKkD2EDyylsYzoVg1d8FiQ&s" },
+    { text: "vscode", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJ7ry_nf70RptiBPXBrOyeqLtJm5FFt2uFQ&s" }
+  ]
+
+  const toolsDBE = [
+    { text: "python", img: "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" },
+    { text: "django", img: "https://www.svgrepo.com/show/353657/django-icon.svg" },
+    { text: "c", img: "https://img.icons8.com/?size=512&id=40670&format=png" },
+    { text: "c++", img: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png" },
+    { text: "java", img: "https://brandlogos.net/wp-content/uploads/2021/11/java-logo.png" },
+    { text: "mySQL", img: "https://miro.medium.com/v2/resize:fit:256/1*hcPKbZ2XgDjGFKvTDi79Jw.png" },
+    { text: "github", img: "https://cdn-icons-png.flaticon.com/512/25/25231.png" },
+    { text: "git", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFT1MO4Ln0Ynz4VKkD2EDyylsYzoVg1d8FiQ&s" },
+    { text: "vscode", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJ7ry_nf70RptiBPXBrOyeqLtJm5FFt2uFQ&s" }
+  ]
+
+  const toolsQA = [
+    { text: "notion", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjndQqBR1-JgfwoZDnMWAramovIinwm2ZPA&s" }
+  ]
+  
   return (
     <>
       <div className="menu">
@@ -91,6 +133,32 @@ function App() {
         <div className='list github'>
           <GitButton img={Enigma_of_Fear} name="Enigma of Fear" url="https://github.com/LucasfcBastos/Enigma-of-Fear"/>
           <GitButton img={Happy_Paws} name="Happy paws" url="https://github.com/LucasfcBastos/Happy-Paws"/>
+        </div>
+      </div>
+      <div className='camp' id="knowledge">
+        <Hexagon text="knowledge and experience"/>
+        <p className='camp text'>My knowledge is divided into five professional areas, where I have been able to apply my theoretical and practical knowledge. The scores for each one are the result of an assessment the team made of me</p>
+        <div className="list area">
+          <ListPositions
+            text="Product Owner (PO)"
+            numb={5}
+            tools={toolsPO} />
+          <ListPositions
+            text="Product Designer (PD)"
+            numb={4.6}
+            tools={toolsPD} />
+          <ListPositions
+            text="Developer Front-End (DFE)"
+            numb={5}
+            tools={toolsDFE} />
+          <ListPositions
+            text="Developer Back-End (DBE)"
+            numb={5}
+            tools={toolsDBE} />
+          <ListPositions
+            text="Quality Assurance (QA)"
+            numb={4.6}
+            tools={toolsQA} />
         </div>
       </div>
     </>

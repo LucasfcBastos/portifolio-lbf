@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+.view {
+    transition: 0.3s;
+    background-color: #041017;
+    font-family: "Aldrich", sans-serif;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+div.line {
+    background-color: #0A3D30;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vw;
+    border-radius: 2vw;
+}
+
+div.line .text {
+    align-items: center;
+    display: flex;
+}
+
+div.line .text p {
+    margin: 0px;
+    margin-left: 1.5vw;
+    font-size: 2.5vw;
+}
+
+div.line .avali .rating-container {
+    position: relative;
+    width: 15.4vw;
+    margin-top: -0.1vw;
+    margin-right: 1.5vw;
+}
+
+div.line .avali .rating-container p {
+    letter-spacing: 3px;
+    font-size: 3.5vw;
+    margin: 0px;
+    color: hsl(0, 0%, 50%);
+}
+ 
+div.line .avali .stars-green {
+    letter-spacing: 3px;
+    font-size: 3.5vw;
+    position: absolute;
+    color: rgb(0, 255, 0);
+    overflow: hidden;
+    mask-composite: text;
+}
+
+div.descrip {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.descrip .tools {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.1vw;
+    row-gap: 0vw;
+    width: 100%;
+    margin-bottom: -18px;
+}
+
+div.descrip .tools li {
+    list-style-type: none;
+}
+
+div.descrip p {
+    text-align: center;
+    margin: 0px;
+    margin-top: 1.5vw;
+    margin-left: -0.3vw;
+    margin-bottom: 0.2vw;
+    font-size: 1.2vw;
+}
+
+div.descrip .tools img {
+    background-color: white;
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius: 1vw;
+}
