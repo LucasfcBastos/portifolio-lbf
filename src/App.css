@@ -84,3 +84,15 @@ div#courses .text_and_anim{
 div#courses .text_and_anim p {
     align-content: center;
 }
+
+div#projects .list{
+    display: flex;
+}
+
+div#projects .list.inst{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9vw;
+    row-gap: 4vw;
+}

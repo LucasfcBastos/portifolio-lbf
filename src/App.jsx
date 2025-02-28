@@ -9,8 +9,11 @@ import PrintDisplay from './components/print_display/PrintDisplay.jsx'
 import Evaluation from './components/evaluation/Evaluation.jsx'
 import Certificates from './components/certificates_/Certificates.jsx'
 import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
+import InstButton from './components/inst_button/InstButton.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
+import ByteOdonto from './components/img/Perfil - BD.png'
+import Rota_Verde from './components/img/Perfil - RV.png'
 
 import './App.css'
 
@@ -72,6 +75,14 @@ function App() {
         <div className='text_and_anim'>
           <p className='camp text'>I currently have around {number_certificates} certifications and I'm always looking for more knowledge. I have certifications from UniEVANGÉLICA, Microsoft, Scrumstudy, Dio and Bradesco and many others. I'm always looking for new knowledge to grow as an engineer and to help my team develop projects.</p>
           <SouthAnimation />
+        </div>
+      </div>
+      <div className='camp' id="projects">
+        <Hexagon text="projects carried out"/>
+        <PrintDisplay type="PRINFT" frase="PROJECTS CARRIED OUT AT UNIVERSITY" />
+        <div className='list inst'>
+          <InstButton img={ByteOdonto} origem="integrating project" name="ByteOdonto" url="https://www.instagram.com/bytedonto/"/>
+          <InstButton img={Rota_Verde} origem="hackathon project" name="Rota Verde" url="https://www.instagram.com/rota_verde_/"/>
         </div>
       </div>
     </>

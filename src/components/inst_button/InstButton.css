@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+.camp_inst{
+    width: 35vw;
+    text-align: center;
+}
+
+.camp_inst p {
+    font-family: "Aldrich", sans-serif;
+    font-size: 2vw;
+    margin: 5px;
+}
+
+.camp_inst p.margin {
+    margin-bottom: 2.5vw;
+}
+
+.camp_inst img {
+    background-color: hsl(0, 0%, 100%);
+    width: 17.5vw;
+    height: 17.5vw;
+    margin-right: 15px;
+    border-radius: 2.5vw;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.camp_inst img:hover {
+    box-shadow: rgba(113, 113, 155, 0.5) 0px 7px 29px 0px;
+}
+
+@media (max-width: 680px) {
+    .camp_inst{
+        width: 40vw;
+    }
+
+    .camp_inst p {
+        font-size: 2.5vw;
+    }
+
+    .camp_inst img {
+        width: 22.5vw;
+        height: 22.5vw;
+    }
+}
