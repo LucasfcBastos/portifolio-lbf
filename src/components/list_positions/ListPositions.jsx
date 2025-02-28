@@ -1,7 +1,7 @@
 import './ListPositions.css';
 
 function ListPositions({ text, numb, tools=[] }) {
-    const result = (numb / 5) * 100;
+    const result = (numb / 5) * 15.6;
 
     return (
         <>

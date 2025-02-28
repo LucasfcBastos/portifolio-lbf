@@ -12,6 +12,7 @@ function Fixed() {
         { id: "#courses", label: "Courses" },
         { id: "#projects", label: "Projects" },
         { id: "#knowledge", label: "Knowledge" },
+        { id: "#contact", label: "Contact" },
     ];
 
     return (

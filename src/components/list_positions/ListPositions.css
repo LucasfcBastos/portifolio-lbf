@@ -31,7 +31,6 @@ div.line .text p {
 }
 
 div.line .avali .rating-container {
-    position: relative;
     width: 15.4vw;
     margin-top: -0.1vw;
     margin-right: 1.5vw;
@@ -49,8 +48,8 @@ div.line .avali .stars-green {
     font-size: 3.5vw;
     position: absolute;
     color: rgb(0, 255, 0);
+    max-width: 15.6%;
     overflow: hidden;
-    mask-composite: text;
 }
 
 div.descrip {

@@ -145,7 +145,7 @@ function App() {
             tools={toolsPO} />
           <ListPositions
             text="Product Designer (PD)"
-            numb={4.6}
+            numb={4.53}
             tools={toolsPD} />
           <ListPositions
             text="Developer Front-End (DFE)"
@@ -157,9 +157,12 @@ function App() {
             tools={toolsDBE} />
           <ListPositions
             text="Quality Assurance (QA)"
-            numb={4.6}
+            numb={4.53}
             tools={toolsQA} />
         </div>
+      </div>
+      <div className='camp' id="contact">
+        <Hexagon text="forms of contact"/>
       </div>
     </>
   )
