@@ -16,6 +16,11 @@ div.camp {
     z-index: 0;
 }
 
+div.camp p.camp.text {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
 div#main {
     height: 100vh;
     align-items: center;

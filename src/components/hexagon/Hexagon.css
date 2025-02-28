@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+.box {
+    width: 100vw;
+    height: 6vw;
+}
+
+.id {
+    width: 100%;
+}
+
+.id .container {
+    position: relative;
+}
+
+.id .hexa {
+    position: absolute;
+    background: #01151A;
+    border: 0.5vw solid #03AC44;
+    height: 3.5vw;
+    width: 3.5vw;
+}
+
+.id .hexa.left {
+    top: 0.7vw;
+    margin-left: 120px;
+    transform: rotate(45deg);
+    border-radius: 0.5vw 0vw 0.5vw 0vw;
+}
+
+.id .hexa.right {
+    top: 0.7vw;
+    right: 0;
+    margin-right: 120px;
+    transform: rotate(45.2deg);
+    border-radius: 0.5vw 0vw 0.5vw 0vw;
+}
+
+.id .hexagon {
+    position: relative;
+    background: #01151A;
+    border-bottom: 0.5vw solid #03AC44;
+    border-top: 0.5vw solid #03AC44;
+    height: 5vw;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 3vw;
+    justify-items: center;
+}
+
+.id p {
+    margin: 5px;
+    font-family: "Actor", sans-serif;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: white;
+}
