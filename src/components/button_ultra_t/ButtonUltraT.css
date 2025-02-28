@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+button.cv {
+    letter-spacing: 0.3vw;
+    font-family: "Aldrich", sans-serif;
+    cursor: pointer;
+    background-color: #2A2A2A;
+    font-size: 1.8vw;
+    color: #ffffff;
+    border: 2px solid #94D344;
+    border-radius: 1vw;
+    width: 35vw;
+    height: 4vw;
+    box-shadow: 0 10px #E9E9E9;
+}
+
+button.cv:active {
+    box-shadow: 0 0 #666;
+    transform: translateY(10px);
+}

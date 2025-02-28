@@ -1,4 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+.jersey-text {
+    font-family: "Jersey 25", sans-serif;
+    margin: 1vw;
+}
+
 div.menu {
     position: absolute;
     z-index: 1;
+}
+
+div.camp {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    z-index: 0;
+}
+
+div#main {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+div#main img {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 40vw;
+    height: auto;
+}
+
+div#main .info {
+    margin-top: 25px;
+    position: absolute;
+    right: 0px;
+    align-content: center;
+    justify-items: center;
+}
+
+div#main #cargo {
+    color: #00ff00;
+    -webkit-text-stroke: 0.1px white;
+    font-size: 5vw;
+    letter-spacing: 0.2vw;
+    margin-top: 1.7vw;
+    margin-bottom: 2vw;
+    text-shadow: 
+        0.5px 5px 0px #004400,
+        -0.5px 5px 0px #004400;
 }
