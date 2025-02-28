@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+.print {
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 9px;
+}

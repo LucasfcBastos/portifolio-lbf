@@ -53,3 +53,14 @@ div#main #cargo {
         0.5px 5px 0px #004400,
         -0.5px 5px 0px #004400;
 }
+
+div#traineng div.content {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+div#traineng img {
+    width: 40vw;
+    height: 30vw;
+}
