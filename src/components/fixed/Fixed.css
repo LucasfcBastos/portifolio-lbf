@@ -72,3 +72,23 @@
     background-color: #00FF62;
     rotate: -180deg;
 }
+
+@media (max-width: 680px) {
+    .menu-list {
+        visibility: hidden;
+    }
+
+    .button-config button.menu{
+        visibility: visible;
+    }
+
+    .button-config button:hover{
+        transition: 0.5s;
+        background-color: #cacaca;
+    }
+
+    .button-config button.config:hover{
+        transition: 0.5s;
+        background-color: #cacaca;
+    }
+}
