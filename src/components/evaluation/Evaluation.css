@@ -1,0 +1,42 @@
+.camp_evaluation {
+    text-align: center;
+    justify-items: center;
+    width: 21.7vw;
+}
+
+.camp_evaluation p.url {
+    cursor: pointer;
+    margin-bottom: 5vw;
+}
+
+.camp_evaluation p.url:hover {
+    text-decoration: underline;
+}
+
+.camp_evaluation p.description {
+    font-size: 1.4vw;
+    margin: 0px;
+}
+
+.camp_evaluation .rating-container {
+    margin-top: -5.6vw;
+    margin-left: 2.1vw;
+    position: absolute;
+    width: 17.5vw;
+}
+
+.camp_evaluation .rating-container p {
+    letter-spacing: 3px;
+    font-size: 4vw;
+    margin: 0px;
+    color: hsl(0, 0%, 50%);
+}
+ 
+.camp_evaluation .stars-green {
+    letter-spacing: 3px;
+    font-size: 4vw;
+    position: absolute;
+    color: rgb(0, 255, 0);
+    overflow: hidden;
+    mask-composite: text;
+}

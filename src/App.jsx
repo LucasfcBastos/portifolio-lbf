@@ -6,6 +6,7 @@ import Hexagon from './components/hexagon/Hexagon.jsx'
 import TextColor from './components/TextColor.jsx'
 import ImgPixel from './components/img_pixel/ImgPixel.jsx'
 import PrintDisplay from './components/print_display/PrintDisplay.jsx'
+import Evaluation from './components/evaluation/Evaluation.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
 
@@ -49,6 +50,11 @@ function App() {
             </ul>
           </div>
           <img src="https://www4.unievangelica.edu.br/storage/4613/unievangelica2.jpg"></img>
+        </div>
+        <div className='reviews'>
+          <Evaluation text="Google" url="https://www.google.com/search?client=opera-gx&q=unievangelica&sourceid=opera&ie=UTF-8&oe=UTF-8#lrd=0x935ea41e3d4f01bb:0xc7932a89efac8958,1,,,," numb={4.5} avali={782} />
+          <Evaluation text="Guia da carreira" url="https://www.guiadacarreira.com.br/faculdades/unievangelica-centro-universitario-de-anapolis/cursos/engenharia-de-software" condicao={true} numb={5} avali={3} />
+          <Evaluation text="Mec" url="https://www4.unievangelica.edu.br/noticia/4589-cursos-da-unievangelica-recebem-nota-4-na-avaliacao-do-mec" numb={4} />
         </div>
       </div>
     </>

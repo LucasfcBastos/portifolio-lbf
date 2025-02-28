@@ -64,3 +64,9 @@ div#traineng img {
     width: 40vw;
     height: 30vw;
 }
+
+div#traineng .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
