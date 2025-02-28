@@ -10,10 +10,13 @@ import Evaluation from './components/evaluation/Evaluation.jsx'
 import Certificates from './components/certificates_/Certificates.jsx'
 import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
 import InstButton from './components/inst_button/InstButton.jsx'
+import GitButton from './components/git_button/GitButton.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
 import ByteOdonto from './components/img/Perfil - BD.png'
 import Rota_Verde from './components/img/Perfil - RV.png'
+import Enigma_of_Fear from './components/img/project01.png'
+import Happy_Paws from './components/img/project02.png'
 
 import './App.css'
 
@@ -83,6 +86,11 @@ function App() {
         <div className='list inst'>
           <InstButton img={ByteOdonto} origem="integrating project" name="ByteOdonto" url="https://www.instagram.com/bytedonto/"/>
           <InstButton img={Rota_Verde} origem="hackathon project" name="Rota Verde" url="https://www.instagram.com/rota_verde_/"/>
+        </div>
+        <PrintDisplay type="PRINFT" frase="PROJECTS CARRIED OUT ALONE" />
+        <div className='list github'>
+          <GitButton img={Enigma_of_Fear} name="Enigma of Fear" url="https://github.com/LucasfcBastos/Enigma-of-Fear"/>
+          <GitButton img={Happy_Paws} name="Happy paws" url="https://github.com/LucasfcBastos/Happy-Paws"/>
         </div>
       </div>
     </>

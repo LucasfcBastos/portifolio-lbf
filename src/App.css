@@ -96,3 +96,10 @@ div#projects .list.inst{
     gap: 9vw;
     row-gap: 4vw;
 }
+
+div#projects .list.github{
+    width: 100%;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+.git{
+    border-radius: 1.5vw;
+    background-color: white;
+    width: 29vw;
+    height: 22vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.git:hover {
+    box-shadow: rgba(0, 255, 0, 0.5) 0px 7px 29px 0px;
+}
+
+.git img {
+    border-radius: 1.5vw 1.5vw 0vw 0vw;
+    background-color: hsl(0, 0%, 50%);
+    width: 100%;
+    border-bottom: 2px solid #000000;
+}
+
+.git p {
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.git p:hover {
+    text-decoration: underline;
+}
