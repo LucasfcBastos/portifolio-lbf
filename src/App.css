@@ -75,3 +75,12 @@ div#courses .list{
     width: 100%;
     justify-items: center;
 }
+
+
+div#courses .text_and_anim{
+    display: flex;
+}
+
+div#courses .text_and_anim p {
+    align-content: center;
+}

@@ -14,6 +14,9 @@ import Photo_Lucas from './components/img/photo.png'
 import './App.css'
 
 function App() {
+
+  const number_certificates = 13
+
   return (
     <>
       <div className="menu">
@@ -64,6 +67,9 @@ function App() {
           <Certificates img="https://www.scrumstudy.com/Scrum-Images/brand-logo/badge-SFC.png" link="scrumstudy.com" type="scrum fundamentals certified" data="march 14, 2024" url="https://www.scrumstudy.com/certification/verify?type=SFC&number=1020875"/>
           <Certificates img="https://hermes.dio.me/courses/badge/c521ffc5-3b42-49b2-86db-46ae70b2e260.png" link="dio.me" type="ia applied to data" data="january 17, 2025" url="https://www.dio.me/certificate/80ZUMOZV/share"/>
           <Certificates img="https://hermes.dio.me/courses/badge/406684a4-396d-4160-94b9-ead934e18564.png" link="dio.me" type="code versioning with git and github" data="february 10, 2025" url="https://www.dio.me/certificate/TWQTOHWW/share"/>
+        </div>
+        <div className='text_and_anim'>
+          <p className='camp text'>I currently have around {number_certificates} certifications and I'm always looking for more knowledge. I have certifications from UniEVANGÉLICA, Microsoft, Scrumstudy, Dio and Bradesco and many others. I'm always looking for new knowledge to grow as an engineer and to help my team develop projects.</p>
         </div>
       </div>
     </>
