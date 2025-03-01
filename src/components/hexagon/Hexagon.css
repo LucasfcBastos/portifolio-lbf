@@ -11,6 +11,7 @@
 
 .id .container {
     position: relative;
+    justify-items: center;
 }
 
 .id .hexa {
@@ -23,7 +24,7 @@
 
 .id .hexa.left {
     top: 0.7vw;
-    margin-left: 120px;
+    margin-left: 8.7vw;
     transform: rotate(45deg);
     border-radius: 0.5vw 0vw 0.5vw 0vw;
 }
@@ -31,7 +32,7 @@
 .id .hexa.right {
     top: 0.7vw;
     right: 0;
-    margin-right: 120px;
+    margin-right: 8.7vw;
     transform: rotate(45.2deg);
     border-radius: 0.5vw 0vw 0.5vw 0vw;
 }
@@ -41,15 +42,17 @@
     background: #01151A;
     border-bottom: 0.5vw solid #03AC44;
     border-top: 0.5vw solid #03AC44;
+    margin-right: 8.7vw;
+    margin-left: 8.7vw;
+    width: calc( 100% - 22vw);
     height: 5vw;
-    margin-left: 150px;
-    margin-right: 150px;
     margin-bottom: 3vw;
     justify-items: center;
+    align-content: center;
 }
 
 .id p {
-    margin: 5px;
+    margin: 0px;
     font-family: "Actor", sans-serif;
     font-size: 3.5vw;
     font-weight: bold;

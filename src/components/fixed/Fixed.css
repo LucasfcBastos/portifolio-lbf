@@ -4,12 +4,15 @@
     text-align: center;
     align-content: end;
     width: 100vw;
-    height: 50px;
+    height: 4vw;
+    min-height: 40px;
 }
 
 .fixed-top img {
-    width: 40px;
+    min-width: 33px;
+    width: 3.2vw;
     height: auto;
+    margin-top: 5px;
 }
 
 .menu-list {

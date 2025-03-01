@@ -26,14 +26,14 @@
 }
 
 .camp_evaluation .rating-container p {
-    letter-spacing: 3px;
+    letter-spacing: 0.2vw;
     font-size: 4vw;
     margin: 0px;
     color: hsl(0, 0%, 50%);
 }
  
 .camp_evaluation .stars-green {
-    letter-spacing: 3px;
+    letter-spacing: 0.2vw;
     font-size: 4vw;
     position: absolute;
     color: rgb(0, 255, 0);

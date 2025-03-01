@@ -37,19 +37,19 @@ div.line .avali .rating-container {
 }
 
 div.line .avali .rating-container p {
-    letter-spacing: 3px;
+    letter-spacing: 0.4vw;
     font-size: 3.5vw;
     margin: 0px;
     color: hsl(0, 0%, 50%);
 }
  
 div.line .avali .stars-green {
-    letter-spacing: 3px;
+    letter-spacing: 0.4vw;
     font-size: 3.5vw;
     position: absolute;
     color: rgb(0, 255, 0);
-    max-width: 15.6%;
     overflow: hidden;
+    mask-composite: text;
 }
 
 div.descrip {

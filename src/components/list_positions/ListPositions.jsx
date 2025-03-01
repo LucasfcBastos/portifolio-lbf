@@ -1,7 +1,7 @@
 import './ListPositions.css';
 
 function ListPositions({ text, numb, tools=[] }) {
-    const result = (numb / 5) * 15.6;
+    const result = (numb / 5) * 16.5;
 
     return (
         <>
@@ -12,7 +12,7 @@ function ListPositions({ text, numb, tools=[] }) {
                     </div>
                     <div className='avali'>
                         <div className="rating-container">
-                            <div className="stars-green" style={{ width: `${result}%` }}>★★★★★</div>
+                            <div className="stars-green" style={{ width: `${result}vw` }}>★★★★★</div>
                             <p>★★★★★</p>
                         </div>
                     </div>

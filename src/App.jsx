@@ -38,6 +38,8 @@ function App() {
     { text: "figma", img: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png" },
     { text: "power", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAqBiy1t9XTIN9GMa25sQHutx9lRPIrvW1hg&s" }, 
     { text: "miro", img: "https://files.readme.io/17d4a23-miro-logo-color-square.png" },
+    { text: "pinter", img: "https://cdn-icons-png.flaticon.com/512/174/174863.png" }, 
+    { text: "paint", img: "https://img.utdstc.com/icon/5f1/f5f/5f1f5f3ba264aaf307db2dece6695326a02ca427fb29be45b70f7d18c3eea143:200" },
   ];
 
   const toolsDFE = [
@@ -63,7 +65,10 @@ function App() {
   ]
 
   const toolsQA = [
-    { text: "notion", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjndQqBR1-JgfwoZDnMWAramovIinwm2ZPA&s" }
+    { text: "notion", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjndQqBR1-JgfwoZDnMWAramovIinwm2ZPA&s" },
+    { text: "python", img: "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" },
+    { text: "js", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwL--h8BE2ZUahfb8Tj0RDno-V65VMe79-CA&s" },
+    { text: "vscode", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJ7ry_nf70RptiBPXBrOyeqLtJm5FFt2uFQ&s" }
   ]
   
   return (
@@ -145,9 +150,9 @@ function App() {
             tools={toolsPO} />
           <ListPositions
             text="Product Designer (PD)"
-            numb={4.53}
+            numb={4.5}
             tools={toolsPD} />
-          <ListPositions
+          <ListPositions  
             text="Developer Front-End (DFE)"
             numb={5}
             tools={toolsDFE} />
@@ -157,7 +162,7 @@ function App() {
             tools={toolsDBE} />
           <ListPositions
             text="Quality Assurance (QA)"
-            numb={4.53}
+            numb={4.5}
             tools={toolsQA} />
         </div>
       </div>
