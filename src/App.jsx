@@ -12,6 +12,7 @@ import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
 import InstButton from './components/inst_button/InstButton.jsx'
 import GitButton from './components/git_button/GitButton.jsx'
 import ListPositions from './components/list_positions/ListPositions.jsx'
+import ContactBar from './components/contact_bar/ContactBar.jsx'
 
 import Photo_Lucas from './components/img/photo.png'
 import ByteOdonto from './components/img/Perfil - BD.png'
@@ -168,6 +169,13 @@ function App() {
       </div>
       <div className='camp' id="contact">
         <Hexagon text="forms of contact"/>
+        <div>
+          <ContactBar img="https://cdnlogo.com/logos/w/29/whatsapp-icon.svg" text="whatsapp" url="https://wa.me/556284991644?text=Olá%20Lucas,%20tudo%20bem%3F"/>
+          <ContactBar img="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" text="instagram" url="https://www.instagram.com/lucas.bf_gts/"/>
+          <ContactBar img="https://cdn-icons-png.flaticon.com/512/174/174857.png" text="linkedin" url="https://linkedin.com/in/lucas-bastos-811a172a7"/>
+          <ContactBar img="https://cdn-icons-png.flaticon.com/512/25/25231.png" text="github" url="https://github.com/LucasfcBastos"/>
+          <ContactBar img="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" text="youtube" url="https://www.youtube.com/@Lucas_Furango"/>
+        </div>
       </div>
     </>
   )
