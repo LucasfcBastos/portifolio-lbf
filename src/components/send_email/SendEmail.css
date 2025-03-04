@@ -13,6 +13,7 @@ form textarea {
     border: 2px solid #00ff00;
     background-color: #ffffff50;
     color: white;
+    font-size: 1.5vw;
 }
 
 form input[type=text],
@@ -36,21 +37,52 @@ form textarea:focus {
     color: black;
 }
 
+form .button {
+    margin-top: 2vw;
+}
+
+form .button input[type=submit] {
+    width: 10vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-radius: 5vw;
+    border: 2px solid #00ff00;
+
+}
+
 @media (max-width: 680px) {
     form {
         margin-left: 2vw;
     }
 
     form input[type=text],
+    form input[type=email],
+    form textarea {
+        font-size: 2.5vw;
+    }
+
+    form input[type=text],
     form input[type=email] {
-        height: 5vw;
+        height: 6vw;
         border-radius: 2vw;
         padding: 0vw 1vw;
     }
     
     form textarea {
-        height: 20vw;
+        height: 30vw;
         border-radius: 1vw;
         padding: 1vw 1vw;
+    }
+    
+    form .button input[type=submit] {
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 30vw;
+        height: 7.5vw;
+        font-size: 3vw;
+        border-radius: 2.5vw;
+        margin-top: 2vw;
+        margin-bottom: 6vw;
     }
 }

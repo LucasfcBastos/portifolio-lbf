@@ -21,12 +21,15 @@ function SendEmail({img, origem, name, url}) {
                 type='textarea'
                 placeholder='Write your mensagem'
                 minLength={1}
-                maxLength={10485760}
+                maxLength={10000000}
                 required
             />
-            <input
-                type='submit'
-            />
+            <div className='button'>
+                <input
+                    type='submit'
+                    value="SEND"
+                />
+            </div>
         </form>
     )
 }
