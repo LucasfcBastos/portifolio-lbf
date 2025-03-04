@@ -124,6 +124,43 @@ div#contact .list.contact hr {
         margin-left: 0px;
     }
 
+    div.camp p.camp.text {
+        font-size: 3vw;
+    }
+
+    div#main {
+        align-content: center;
+        display: block;
+    }
+
+    div#main img {
+        margin-top: 0px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 50vw;
+    }
+    
+    div#main .info {
+        margin-top: 2.5vw;
+        position: relative;
+    }
+
+    div#main #cargo {
+        font-size: 7.5vw;
+        letter-spacing: 0.5vw;
+    }
+
+    div#traineng div.content {
+        display: block;
+    }
+
+    div#traineng img {
+        width: 60vw;
+        height: auto;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
     div#contact .list.contact {
         display: block;
     }

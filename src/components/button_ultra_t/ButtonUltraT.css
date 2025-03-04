@@ -18,3 +18,15 @@ button.cv:active {
     box-shadow: 0 0 #666;
     transform: translateY(10px);
 }
+
+@media (max-width: 680px) {
+    button.cv {
+        letter-spacing: 0.3vw;
+        font-size: 3vw;
+        border: 3px solid #94D344;
+        border-radius: 1.5vw;
+        width: 50vw;
+        height: 6vw;
+        box-shadow: 0 2.5vw #E9E9E9;
+    }
+}

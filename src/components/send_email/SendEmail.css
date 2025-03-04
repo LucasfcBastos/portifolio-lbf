@@ -3,8 +3,54 @@ form {
     margin-right: 2vw;
 }
 
-form input,
+form input[type=text],
+form input[type=email],
 form textarea {
-    width: 100%;
-    max-width: 100%;
+    font-family: "Aldrich", sans-serif;
+    margin-top: 1.5vw;
+    width: calc(100% - 2vw);
+    resize: none;
+    border: 2px solid #00ff00;
+    background-color: #ffffff50;
+    color: white;
+}
+
+form input[type=text],
+form input[type=email] {
+    height: 2.5vw;
+    border-radius: 2vw;
+    padding: 0vw 1vw;
+}
+
+form textarea {
+    height: 17vw;
+    border-radius: 1vw;
+    padding: 1vw 1vw;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form textarea:focus {
+    border: 2px solid #ffff00;
+    background-color: #ffffff;
+    color: black;
+}
+
+@media (max-width: 680px) {
+    form {
+        margin-left: 2vw;
+    }
+
+    form input[type=text],
+    form input[type=email] {
+        height: 5vw;
+        border-radius: 2vw;
+        padding: 0vw 1vw;
+    }
+    
+    form textarea {
+        height: 20vw;
+        border-radius: 1vw;
+        padding: 1vw 1vw;
+    }
 }

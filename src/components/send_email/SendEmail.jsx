@@ -5,15 +5,27 @@ function SendEmail({img, origem, name, url}) {
         <form>
             <input
                 type='text'
-                placeholder='Enter your name'
+                placeholder='Enter your name or company name'
+                minLength={2}
+                maxLength={150}
+                required
             /> <br />
             <input
-                type='text'
-                placeholder='Enter your email'
+                type='email'
+                placeholder='Enter your e-mail address'
+                minLength={6}
+                maxLength={320}
+                required
             /> <br />
             <textarea
                 type='textarea'
                 placeholder='Write your mensagem'
+                minLength={1}
+                maxLength={10485760}
+                required
+            />
+            <input
+                type='submit'
             />
         </form>
     )

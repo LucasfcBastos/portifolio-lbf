@@ -15,3 +15,14 @@ p.Typing {
   height: 4vw;
   background-image: linear-gradient(#009dff, #ae00ff);
 }
+
+@media (max-width: 680px) {
+  p.Typing {
+    font-size: 6vw;
+  }
+
+  .bar {
+    width: 1.2vw;
+    height: 6vw;
+  }
+}
