@@ -4,7 +4,8 @@
     height: 6vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
     display: flex;
     position: relative;
     align-items: center;

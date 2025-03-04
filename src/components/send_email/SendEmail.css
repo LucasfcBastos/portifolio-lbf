@@ -1,0 +1,10 @@
+form {
+    margin-left: 1.5vw;
+    margin-right: 2vw;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 100%;
+}

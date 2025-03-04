@@ -104,11 +104,36 @@ div#projects .list.github{
     justify-content: center;
 }
 
+div#contact .list.contact {
+    display: flex;
+}
+
+div#contact .list.contact .camp {
+    width: 50%;
+    margin: 0px;
+}
+
+div#contact .list.contact hr {
+    margin: 0px;
+}
+
 @media (max-width: 680px) {
 
     div.camp {
         width: 100%;
         margin-left: 0px;
+    }
+
+    div#contact .list.contact {
+        display: block;
+    }
+
+    div#contact .list.contact .camp {
+        width: 100%;
+    }
+
+    hr {
+        visibility: hidden;
     }
 
 }
