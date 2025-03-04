@@ -76,22 +76,22 @@
     rotate: -180deg;
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 750px) {
     .menu-list {
-        visibility: hidden;
+        display: none;
+    }
+    
+    .fixed-top {
+        width: 100vw;
+        min-height: 70px
     }
 
     .button-config button.menu{
+        margin-left: 5vw;
         visibility: visible;
     }
 
-    .button-config button:hover{
-        transition: 0.5s;
-        background-color: #cacaca;
-    }
-
-    .button-config button.config:hover{
-        transition: 0.5s;
-        background-color: #cacaca;
+    .button-config button.config{
+        margin-right: 5vw;
     }
 }

@@ -40,3 +40,35 @@
     overflow: hidden;
     mask-composite: text;
 }
+
+@media screen and (max-width: 750px) {
+    .camp_evaluation {
+        width: 45vw;
+    }
+
+    .camp_evaluation p.url {
+        font-size: 4.5vw;
+        margin-bottom: 4vw;
+    }
+    
+    .camp_evaluation p.description {
+        margin-top: 10vw;
+        font-size: 3.5vw;
+    }
+
+    .camp_evaluation .rating-container {
+        margin-left: 5vw;
+        width: 35vw;
+    }
+
+    .camp_evaluation .rating-container p {
+        letter-spacing: 0.4vw;
+        font-size: 8vw;
+    }
+     
+    .camp_evaluation .stars-green {
+        letter-spacing: 0.4vw;
+        font-size: 8vw;
+        color: rgb(0, 255, 0);
+    }
+}

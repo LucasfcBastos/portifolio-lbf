@@ -62,3 +62,9 @@
         margin-top: 15.5%;
     }
 }
+
+@media screen and (max-width: 750px) {
+    .wave {
+        display: none;
+    }
+}

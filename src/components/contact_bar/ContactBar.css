@@ -37,6 +37,7 @@
 }
 
 .button_contact .content img {
+    object-fit: cover;
     width: 4vw;
     height: 4vw;
     border: 0px solid transparent;

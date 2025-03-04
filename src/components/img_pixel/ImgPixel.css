@@ -32,3 +32,25 @@ img.Fighter {
     margin-right: 14.4vw;
     margin-top: 13.2vw;
 }
+
+@media screen and (max-width: 750px) {
+    .background {
+        height: 100vw;
+    }
+    
+    img.Wall {
+        height: 100vw;
+    }
+    
+    img.Nidere {
+        display: none;
+    }
+    
+    img.Fighter {
+        height: 51vw;
+        left: 0px;
+        margin-left: 50%;
+        transform: translate(-65%);
+        margin-top: 43vw;
+    }
+}

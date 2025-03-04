@@ -16,6 +16,7 @@
     background-color: hsl(0, 0%, 50%);
     width: 100%;
     border-bottom: 2px solid #000000;
+    object-fit: cover;
 }
 
 .git p {

@@ -84,4 +84,5 @@ div.descrip .tools img {
     width: 5.5vw;
     height: 5.5vw;
     border-radius: 1vw;
+    object-fit: cover;
 }

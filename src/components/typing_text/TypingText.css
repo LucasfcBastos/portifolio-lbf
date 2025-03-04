@@ -16,13 +16,13 @@ p.Typing {
   background-image: linear-gradient(#009dff, #ae00ff);
 }
 
-@media (max-width: 680px) {
+@media screen and (max-width: 750px) {
   p.Typing {
-    font-size: 6vw;
+    font-size: 8vw;
   }
-
+  
   .bar {
     width: 1.2vw;
-    height: 6vw;
+    height: 8vw;
   }
 }
