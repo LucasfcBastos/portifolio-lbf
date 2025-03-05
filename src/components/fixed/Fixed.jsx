@@ -26,7 +26,7 @@ function Fixed() {
                         <li key={item.id}>
                             <a href={item.id} onClick={() => setSelected(item.id)}>
                                 <svg width="20" height="20">
-                                    <circle cx="10" cy="10" r="7.5" stroke="white" strokeWidth="3" fill={selected === item.id ? "white" : "transparent"} />
+                                    <circle cx="10" cy="10" r="7.5" stroke="var(--ColorImage)" strokeWidth="3" fill={selected === item.id ? "var(--ColorImage)" : "transparent"} />
                                 </svg>
                             </a>
                         </li>

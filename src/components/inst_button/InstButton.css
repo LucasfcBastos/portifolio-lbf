@@ -4,6 +4,7 @@
 }
 
 .camp_inst p {
+    color: var(--ColorText);
     margin: 5px;
 }
 
@@ -12,7 +13,7 @@
 }
 
 .camp_inst img {
-    background-color: hsl(0, 0%, 100%);
+    border: 2px solid var(--ColorImage);
     width: 17.5vw;
     height: 17.5vw;
     margin-right: 15px;

@@ -1,6 +1,6 @@
 .fixed-top {
     position: fixed;
-    background-color: white;
+    background-color: var(--ColorImage);
     text-align: center;
     align-content: end;
     width: 100vw;

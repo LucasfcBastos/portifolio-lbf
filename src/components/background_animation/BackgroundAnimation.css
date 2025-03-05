@@ -12,7 +12,7 @@
 .Background span {
     width: 30vw;
     height: 30vw;
-    background-image: url(../img/d20.png);
+    background-image: var(--ImgBackGround);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

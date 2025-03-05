@@ -5,6 +5,7 @@
     text-align: center;
     font-size: 2.5vw;
     margin-top: 9px;
+    color: var(--ColorText);
 }
 
 @media screen and (max-width: 750px) {

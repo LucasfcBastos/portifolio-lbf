@@ -8,7 +8,7 @@
 }
 
 .camp_cert img {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--ColorImage);
     width: 16.5vw;
     height: 16.5vw;
     border-radius: 2vw;
@@ -18,12 +18,13 @@
 }
 
 .camp_cert img:hover {
-    background-color: hsl(0, 0%, 75%);
+    background-color: #808080
 }
 
 .camp_cert .text {
     font-family: "Aldrich", sans-serif;
     font-size: 1.5vw;
+    color: var(--ColorText);
 }
 
 .camp_cert .text p.margin {

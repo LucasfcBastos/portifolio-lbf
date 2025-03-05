@@ -12,7 +12,7 @@ form textarea {
     resize: none;
     border: 2px solid #00ff00;
     background-color: #ffffff50;
-    color: white;
+    color: var(--ColorText);
     font-size: 1.5vw;
 }
 
@@ -32,9 +32,8 @@ form textarea {
 form input[type=text]:focus,
 form input[type=email]:focus,
 form textarea:focus {
-    border: 2px solid #ffff00;
-    background-color: #ffffff;
-    color: black;
+    background-color: var(--ColorImage);
+    color: var(--ColorTextSecond);
 }
 
 form .button {
@@ -47,7 +46,12 @@ form .button input[type=submit] {
     font-size: 1.5vw;
     cursor: pointer;
     border-radius: 5vw;
+    transition: 0.5s;
     border: 2px solid #00ff00;
+}
+
+form .button input[type=submit]:hover {
+    background-color: #00ff00;
 }
 
 @media screen and (max-width: 750px) {

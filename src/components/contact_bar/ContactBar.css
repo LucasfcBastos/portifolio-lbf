@@ -31,6 +31,7 @@
 }
 
 .button_contact .content p {
+    color: var(--ColorText);
     font-size: 3.5vw;
     margin: 0px;
 }

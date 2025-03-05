@@ -5,6 +5,7 @@
 }
 
 .camp_evaluation p.url {
+    color: var(--ColorText);
     cursor: pointer;
     margin-bottom: 5vw;
 }
@@ -14,6 +15,7 @@
 }
 
 .camp_evaluation p.description {
+    color: var(--ColorText);
     font-size: 1.4vw;
     margin: 0px;
 }

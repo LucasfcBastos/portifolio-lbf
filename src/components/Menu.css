@@ -13,6 +13,7 @@
     width: 75px;
     height: 75px;
     border: 0px;
+    background-color: var(--ColorImage);
     border-radius: 100%;
     transition: 0.5s;
     cursor: pointer;
@@ -84,9 +85,34 @@
     text-decoration: none;
 }
 
-.menu-co p {
+.menu-co .theme input[type="radio"] {
+    display: none;
+}
+
+.menu-co .theme label {
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 1em;
+}
+
+.menu-co .theme input[type="radio"]:checked +  label{
+    background-color: #ffffff;
+    color: black;
+}
+
+.menu-co p,
+.menu-co h1,
+.menu-co label {
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.menu-co h1 {
     font-size: 4vw;
-    color: white;
+}
+
+.menu-co .language h1 {
+    margin-top: 10vh;
 }
 
 
@@ -107,7 +133,7 @@
     .button-config button.menu:hover,
     .button-config button.config:hover {
         transition: 0.2s;
-        background-color: #00FF62;
+        background-color: var(--ColorImage);
         rotate: 0deg;
     }
 
@@ -123,7 +149,12 @@
         margin-right: 10px;
     }
 
+    .menu-co h1,
     .menu-co p {
         font-size: 10vw;
+    }
+    
+    .menu-co label {
+        font-size: 5vw;
     }
 }

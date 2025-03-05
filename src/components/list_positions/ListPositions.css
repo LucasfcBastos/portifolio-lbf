@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 .view {
+    color: #ffffff;
     transition: 0.3s;
     background-color: #041017;
     font-family: "Aldrich", sans-serif;

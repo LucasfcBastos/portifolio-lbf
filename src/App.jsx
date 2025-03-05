@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Fixed from './components/fixed/Fixed.jsx'
 import BackgroundAnimation from './components/background_animation/BackgroundAnimation.jsx'
@@ -32,6 +32,7 @@ function App() {
   const [configVisible, serConfigVisible] = useState(false);
   const number_certificates = 13
   const [selected, setSelected] = useState("#main");
+  const [theme, setTheme] = useState("darkMode");
 
   const items = [
       { id: "#main", label: "Main" },
@@ -88,6 +89,14 @@ function App() {
     { text: "js", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwL--h8BE2ZUahfb8Tj0RDno-V65VMe79-CA&s" },
     { text: "vscode", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJ7ry_nf70RptiBPXBrOyeqLtJm5FFt2uFQ&s" }
   ]
+
+  useEffect(() => {
+    document.querySelector("body").setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = (e) => {
+    setTheme(e.target.id);
+  };
   
   return (
     <>
@@ -136,8 +145,30 @@ function App() {
                 <img src="https://cdn-icons-png.flaticon.com/512/11450/11450177.png" alt="close icon" />
             </div>
             <div>
+              <div className="theme">
+                <h1>theme</h1>
+                <input
+                  type="radio"
+                  id="darkMode"
+                  name="theme"
+                  checked={theme === "darkMode"}
+                  onChange={toggleTheme}
+                />
+                <label htmlFor="darkMode">DARK MODE</label>
+                <input
+                  type="radio"
+                  id="lightMode"
+                  name="theme"
+                  checked={theme === "lightMode"}
+                  onChange={toggleTheme}
+                />
+                <label htmlFor="lightMode">LIGHT MODE</label>
+              </div>
+              <div className="language">
+                <h1>language</h1>
                 <p>PT - BR</p>
                 <p>EN - US</p>
+              </div>
             </div>
         </div>
       </div>

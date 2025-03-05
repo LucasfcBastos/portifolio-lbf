@@ -19,6 +19,7 @@ div.camp {
 div.camp p.camp.text {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+    color: var(--ColorText);
 }
 
 div#main {
@@ -44,7 +45,7 @@ div#main .info {
 
 div#main #cargo {
     color: #00ff00;
-    -webkit-text-stroke: 0.1px white;
+    -webkit-text-stroke: 0.1px var(--ColorText);
     font-size: 5vw;
     letter-spacing: 0.2vw;
     margin-top: 1.7vw;
@@ -58,6 +59,7 @@ div#traineng div.content {
     align-items: center;
     display: flex;
     gap: 10px;
+    color: var(--ColorText);
 }
 
 div#traineng img {
@@ -83,6 +85,7 @@ div#courses .text_and_anim{
 
 div#courses .text_and_anim p {
     align-content: center;
+    color: var(--ColorText);
 }
 
 div#projects .list{
