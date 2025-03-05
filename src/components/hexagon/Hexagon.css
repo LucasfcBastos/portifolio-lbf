@@ -60,6 +60,11 @@
 }
 
 @media screen and (max-width: 750px) {
+    .box {
+        width: 100vw;
+        height: 12vw;
+    }
+
     .id .hexa {
         display: none;
     }

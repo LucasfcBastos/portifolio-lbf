@@ -76,6 +76,44 @@
     rotate: -180deg;
 }
 
+.menu-id {
+    background-color: hsla(120, 100%, 25%, 0.950);
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100dvh;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.menu-id .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-id .close img {
+    margin-top: 2.5vw;
+    margin-right: 2.5vw;
+    width: 15vw;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.menu-id li{
+    list-style-type: none;
+    margin-right: 12vw;
+    font-size: 8vw;
+    margin-bottom: 7.5vw;
+}
+
+.menu-id li a{
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 750px) {
     .menu-list {
         display: none;
@@ -86,7 +124,7 @@
     }
 
     .button-config {
-        height: 85px;
+        height: 90px;
     }
 
     .button-config button.menu{
@@ -96,5 +134,16 @@
 
     .button-config button.config{
         margin-right: 10px;
+    }
+
+    .button-config button.menu:hover,
+    .button-config button.config:hover {
+        transition: 0.2s;
+        background-color: #00FF62;
+        rotate: 0deg;
+    }
+
+    .menu-id.visible {
+        display: block;
     }
 }
