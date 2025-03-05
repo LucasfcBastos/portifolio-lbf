@@ -1,0 +1,129 @@
+.button-config {
+    width: 100%;
+    height: 95px;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.button-config button{
+    width: 75px;
+    height: 75px;
+    border: 0px;
+    border-radius: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.button-config button.menu{
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+.button-config button.config{
+    margin-right: 20px;
+}
+
+.button-config button img {
+    margin-top: 3px;
+    width: 60px;
+    height: 60px;
+}
+
+.button-config button.config:hover{
+    transition: 0.5s;
+    background-color: #00FF62;
+    rotate: -180deg;
+}
+
+.menu-id,
+.menu-co {
+    background-color: hsla(120, 100%, 25%, 0.950);
+    position: fixed;
+    width: 100%;
+    height: 100dvh;
+    text-align: center;
+    align-content: center;
+    z-index: 2;
+}
+
+.menu-id .close,
+.menu-co .close {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.menu-id .close img,
+.menu-co .close img {
+    margin-right: 10px;
+    width: 73px;
+    height: 73px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.menu-id li {
+    list-style-type: none;
+    margin-right: 12vw;
+    font-size: 8vw;
+    margin-bottom: 7.5vw;
+}
+
+.menu-id p {
+    font-size: 8vw;
+}
+
+.menu-id li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-co p {
+    font-size: 4vw;
+    color: white;
+}
+
+
+@media screen and (max-width: 750px) {
+    .button-config {
+        height: 90px;
+    }
+
+    .button-config button.menu{
+        margin-left: 10px;
+        visibility: visible;
+    }
+
+    .button-config button.config{
+        margin-right: 10px;
+    }
+
+    .button-config button.menu:hover,
+    .button-config button.config:hover {
+        transition: 0.2s;
+        background-color: #00FF62;
+        rotate: 0deg;
+    }
+
+    .menu-id.visible {
+        display: block;
+    }
+
+    .menu-co .close {
+        bottom: 15px;
+    }
+    
+    .menu-co .close img {
+        margin-right: 10px;
+    }
+
+    .menu-co p {
+        font-size: 10vw;
+    }
+}

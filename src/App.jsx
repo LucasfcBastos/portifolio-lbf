@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Fixed from './components/fixed/Fixed.jsx'
 import BackgroundAnimation from './components/background_animation/BackgroundAnimation.jsx'
 import TypingText from './components/typing_text/TypingText.jsx'
@@ -22,10 +24,24 @@ import Enigma_of_Fear from './components/img/project01.png'
 import Happy_Paws from './components/img/project02.png'
 
 import './App.css'
+import './components/Menu.css'
 
 function App() {
 
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [configVisible, serConfigVisible] = useState(false);
   const number_certificates = 13
+  const [selected, setSelected] = useState("#main");
+
+  const items = [
+      { id: "#main", label: "Main" },
+      { id: "#about", label: "About" },
+      { id: "#traineng", label: "Traineng" },
+      { id: "#courses", label: "Courses" },
+      { id: "#projects", label: "Projects" },
+      { id: "#knowledge", label: "Knowledge" },
+      { id: "#contact", label: "Contact" },
+  ];
 
   const toolsPO = [
     { text: "trello", img: "https://cdn-icons-png.flaticon.com/512/174/174874.png" },
@@ -75,10 +91,56 @@ function App() {
   
   return (
     <>
+    
+      {/* FIXO */}
       <div className="menu">
         <Fixed />
       </div>
+
+      {/* ANIMAÇÃO DE FUNDO */}
       <BackgroundAnimation />
+
+      {/* CONFIGURAÇÃO */}
+      <div>
+        <div className="button-config">
+            <div>
+                <button className='menu' onClick={() => setMenuVisible(true)}>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4856/4856386.png" alt="menu icon" />
+                </button>
+            </div>
+            <div>
+                <button className='config' onClick={() => serConfigVisible(true)}>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170584.png" alt="config icon" />
+                </button>
+            </div>
+        </div>
+        <div className="menu-id" style={{ display: menuVisible ? "block" : "none" }}>
+            <div className="close" onClick={() => setMenuVisible(false)}>
+                <img src="https://cdn-icons-png.flaticon.com/512/11450/11450177.png" alt="close icon" />
+            </div>
+            <ul>
+                {items.map((item) => (
+                    <li key={item.id}>
+                        <a href={item.id} onClick={() => {
+                            setSelected(item.id);
+                            setMenuVisible(false);
+                        }} style={{ borderBottom: selected === item.id ? "2vw solid white" : "0px" }}>
+                            {item.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div className="menu-co" style={{ display: configVisible ? "block" : "none" }}>
+            <div className="close" onClick={() => serConfigVisible(false)}>
+                <img src="https://cdn-icons-png.flaticon.com/512/11450/11450177.png" alt="close icon" />
+            </div>
+            <div>
+                <p>PT - BR</p>
+                <p>EN - US</p>
+            </div>
+        </div>
+      </div>
       <div className='camp' id='main'>
         <img src={Photo_Lucas} />
         <div className="info">
@@ -87,6 +149,8 @@ function App() {
           <ButtonUltraT text="DOWNLOAD MY CV HERE"/>
         </div>
       </div>
+
+      {/* SOBRE MIM */}
       <div className='camp' id='about'>
         <Hexagon text="ABOUT ME"/>
         <p className='camp text'>
@@ -95,6 +159,8 @@ function App() {
         </p>
         <ImgPixel />
       </div>
+
+      {/* FORMAÇÃO ACADEMICA */}
       <div className='camp' id='traineng'>
         <Hexagon text="academic training"/>
         <PrintDisplay type="PRINT" frase="Degree in Software Engineering" />
@@ -117,6 +183,8 @@ function App() {
           <Evaluation text="Mec" url="https://www4.unievangelica.edu.br/noticia/4589-cursos-da-unievangelica-recebem-nota-4-na-avaliacao-do-mec" numb={4} />
         </div>
       </div>
+
+      {/* CERTIFICADOS QUE NUNCA EXPIRA */}
       <div className='camp' id='courses'>
         <Hexagon text="complementary courses"/>
         <div className='list'>
@@ -129,6 +197,8 @@ function App() {
           <SouthAnimation />
         </div>
       </div>
+
+      {/* PROJETOS PRATICOS */}
       <div className='camp' id="projects">
         <Hexagon text="projects carried out"/>
         <PrintDisplay type="PRINFT" frase="PROJECTS CARRIED OUT AT UNIVERSITY" />
@@ -142,6 +212,8 @@ function App() {
           <GitButton img={Happy_Paws} name="Happy paws" url="https://github.com/LucasfcBastos/Happy-Paws"/>
         </div>
       </div>
+
+      {/* TECNOLOGIAS QUE EU CONHEÇO */}
       <div className='camp' id="knowledge">
         <Hexagon text="knowledge and experience"/>
         <p className='camp text'>My knowledge is divided into five professional areas, where I have been able to apply my theoretical and practical knowledge. The scores for each one are the result of an assessment the team made of me</p>
@@ -168,6 +240,8 @@ function App() {
             tools={toolsQA} />
         </div>
       </div>
+
+      {/* FORMAS DE CONTATO */}
       <div className='camp' id="contact">
         <Hexagon text="forms of contact"/>
         <div className='list contact'>

@@ -4,7 +4,7 @@ body {
   margin-top: 0px;
   margin-left: 0px;
   margin: 0px;
-  background-color: #0a0a0a;
+  background-color: hsl(0, 0%, 5%);
   overflow-x: hidden;
   overflow-y: auto;
   color: white;
