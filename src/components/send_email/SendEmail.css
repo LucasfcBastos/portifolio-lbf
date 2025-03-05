@@ -48,5 +48,42 @@ form .button input[type=submit] {
     cursor: pointer;
     border-radius: 5vw;
     border: 2px solid #00ff00;
+}
 
+@media screen and (max-width: 750px) {
+    form input[type=text],
+    form input[type=email],
+    form textarea {
+        width: calc(100% - 5vw);
+        margin-left: 0.5vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        font-size: 4vw;
+    }
+
+    form input[type=text],
+    form input[type=email] {
+        height: 6vw;
+        border-radius: 2.5vw;
+        padding: 1vw 2vw;
+    }
+    
+    form textarea {
+        height: 23vw;
+        border-radius: 2.5vw;
+        padding: 1vw 2vw;
+    }
+
+    form .button {
+        margin-top: 2vw;
+        height: 20vw;
+    }
+    
+    form .button input[type=submit] {
+        width: 30vw;
+        height: 11vw;
+        margin-left: 50%;
+        transform: translate(-50%);
+        font-size: 5vw;
+    }
 }

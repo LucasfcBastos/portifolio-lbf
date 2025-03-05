@@ -155,10 +155,6 @@ div#contact .list.contact hr {
         margin-bottom: 4vw;
     }
 
-    div#courses .text_and_anim{
-        display: block;
-    }
-
     div#traineng div.content {
         display: block;
     }
@@ -180,5 +176,32 @@ div#contact .list.contact hr {
         display: flex;
         flex-wrap: wrap;
         justify-items: center;
+    }
+
+    div#courses .text_and_anim{
+        display: block;
+    }
+
+    div#projects .list.inst{
+        justify-items: center;
+        display: block;
+    }
+
+    div#projects .list.github{
+        width: 100%;
+        gap: 4vw;
+        row-gap: 5vw;
+    }
+
+    div#contact .list.contact {
+        display: block;
+    }
+
+    div#contact .list.contact .camp {
+        width: 100%;
+    }
+
+    div#contact hr {
+        display: none;
     }
 }

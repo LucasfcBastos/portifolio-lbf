@@ -26,3 +26,20 @@
 .camp_inst img:hover {
     box-shadow: rgba(113, 113, 155, 0.5) 0px 7px 29px 0px;
 }
+
+@media screen and (max-width: 750px) {
+    .camp_inst{
+        width: 50vw;
+        margin-top: 7.5vw;
+        margin-bottom: 7.5vw;
+    }
+
+    .camp_inst p {
+        font-size: 3.5vw;
+    }
+
+    .camp_inst img {
+        width: 25vw;
+        height: 25vw;
+    }
+}

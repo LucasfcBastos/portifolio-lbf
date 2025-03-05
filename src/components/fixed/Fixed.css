@@ -83,15 +83,18 @@
     
     .fixed-top {
         width: 100vw;
-        min-height: 70px
+    }
+
+    .button-config {
+        height: 85px;
     }
 
     .button-config button.menu{
-        margin-left: 5vw;
+        margin-left: 10px;
         visibility: visible;
     }
 
     .button-config button.config{
-        margin-right: 5vw;
+        margin-right: 10px;
     }
 }

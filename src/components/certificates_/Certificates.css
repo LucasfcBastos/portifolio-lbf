@@ -29,3 +29,30 @@
 .camp_cert .text p.margin {
     margin-bottom: 2.3vw;
 }
+
+@media screen and (max-width: 750px) {
+    .camp_cert{
+        width: 100vw;
+        margin-bottom: 5vw;
+    }
+
+    .camp_cert img {
+        margin-left: 2vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .camp_cert .text p.margin.visible {
+        display: none;
+    }
+
+    .camp_cert .text {
+        font-size: 3vw;
+        align-content: center;
+        margin-right: 2.5vw;
+    }
+    
+    .camp_cert .text p.margin {
+        margin-bottom: 2.3vw;
+    }
+}
