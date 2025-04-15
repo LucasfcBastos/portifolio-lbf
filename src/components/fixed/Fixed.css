@@ -8,11 +8,12 @@
     min-height: 48px;
 }
 
-.fixed-top img {
-    min-width: 33px;
-    width: 3.2vw;
-    height: auto;
+.fixed-top svg {
+    width: 3.3vw;
+    height: 3.3vw;
     margin-top: 5px;
+    background-image: var(--Logo);
+    background-size: contain;
 }
 
 .menu-list {
@@ -42,5 +43,10 @@
     
     .fixed-top {
         width: 100vw;
+    }
+
+    .fixed-top svg {
+        width: 5.5em;
+        height: 5.5em;
     }
 }

@@ -1,35 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
-/* :root {
-  --BackGroundColor: #f2f2f2;
-  --ColorText: #000000;
-  --ImgBackGround: url(./components/img/d20.png);
-  --ColorImage: hsl(0, 0%, 5%);
-  --ColorTextSecond: #ffffff;
-} */
-
 :root {
   --BackGroundColor: #0d0d0d;
   --ColorText: #ffffff;
-  --ImgBackGround: url(./components/img/d20.png);
+  --ImgBackGround: url(./components/img/d20-light.png);
   --ColorImage: #E9E9E9;
   --ColorTextSecond: #000000;
+  --Logo: url(./components/svg/logo-dark.svg);
 }
 
 body[data-theme="darkMode"] {
   --BackGroundColor: #0d0d0d;
   --ColorText: #ffffff;
-  --ImgBackGround: url(./components/img/d20.png);
-  --ColorImage: #E9E9E9;
+  --ImgBackGround: url(./components/img/d20-light.png);
+  --ColorImage: #f2f2f2;
   --ColorTextSecond: #000000;
+  --Logo: url(./components/svg/logo-dark.svg);
 }
 
 body[data-theme="lightMode"] {
   --BackGroundColor: #f2f2f2;
   --ColorText: #000000;
-  --ImgBackGround: url(./components/img/d20.png);
+  --ImgBackGround: url(./components/img/d20-dark.png);
   --ColorImage: hsl(0, 0%, 5%);
   --ColorTextSecond: #ffffff;
+  --Logo: url(./components/svg/logo-light.svg);
 }
 
 body {

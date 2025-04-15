@@ -55,15 +55,15 @@
 .menu-id .close,
 .menu-co .close {
     position: absolute;
-    bottom: 20px;
+    bottom: 13px;
     right: 0;
 }
 
 .menu-id .close img,
 .menu-co .close img {
-    margin-right: 10px;
-    width: 73px;
-    height: 73px;
+    margin-right: 20px;
+    width: 75px;
+    height: 75px;
     background-color: white;
     border-radius: 100%;
     cursor: pointer;
@@ -93,6 +93,14 @@
     cursor: pointer;
     border: 2px solid white;
     padding: 1em;
+}
+
+.menu-co .theme input#darkMode + label {
+    border-radius: 1em 0% 0em 1em;
+}
+
+.menu-co .theme input#lightMode + label {
+    border-radius: 0em 1em 1em 0em;
 }
 
 .menu-co .theme input[type="radio"]:checked +  label{

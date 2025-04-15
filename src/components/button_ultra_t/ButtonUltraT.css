@@ -27,5 +27,6 @@ button.cv:active {
         border-radius: 3vw;
         width: 90vw;
         height: 10vw;
+        margin-bottom: 15vw;
     }
 }

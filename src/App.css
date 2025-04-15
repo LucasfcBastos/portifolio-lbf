@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-
-.jersey-text {
-    font-family: "Jersey 25", sans-serif;
-    margin: 1vw;
+@font-face {
+    font-family: "Jersey 25"; src: url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 }
 
 div.menu {
@@ -37,6 +34,7 @@ div#main img {
 
 div#main .info {
     margin-top: 25px;
+    margin-right: 25px;
     position: absolute;
     right: 0px;
     align-content: center;
@@ -47,6 +45,7 @@ div#main #cargo {
     color: #00ff00;
     -webkit-text-stroke: 0.1px var(--ColorText);
     font-size: 5vw;
+    font-family: "Jersey 25";
     letter-spacing: 0.2vw;
     margin-top: 1.7vw;
     margin-bottom: 2vw;

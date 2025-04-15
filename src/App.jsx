@@ -10,7 +10,6 @@ import ImgPixel from './components/img_pixel/ImgPixel.jsx'
 import PrintDisplay from './components/print_display/PrintDisplay.jsx'
 import Evaluation from './components/evaluation/Evaluation.jsx'
 import Certificates from './components/certificates_/Certificates.jsx'
-import SouthAnimation from './components/south_animation/SouthAnimation.jsx'
 import InstButton from './components/inst_button/InstButton.jsx'
 import GitButton from './components/git_button/GitButton.jsx'
 import ListPositions from './components/list_positions/ListPositions.jsx'
@@ -75,7 +74,6 @@ function App() {
     { text: "python", img: "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" },
     { text: "django", img: "https://www.svgrepo.com/show/353657/django-icon.svg" },
     { text: "c", img: "https://img.icons8.com/?size=512&id=40670&format=png" },
-    { text: "c++", img: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png" },
     { text: "java", img: "https://brandlogos.net/wp-content/uploads/2021/11/java-logo.png" },
     { text: "mySQL", img: "https://miro.medium.com/v2/resize:fit:256/1*hcPKbZ2XgDjGFKvTDi79Jw.png" },
     { text: "github", img: "https://cdn-icons-png.flaticon.com/512/25/25231.png" },
@@ -172,6 +170,8 @@ function App() {
             </div>
         </div>
       </div>
+
+      {/* INTRO */}
       <div className='camp' id='main'>
         <img src={Photo_Lucas} />
         <div className="info">
@@ -225,7 +225,6 @@ function App() {
         </div>
         <div className='text_and_anim'>
           <p className='camp text'>I currently have around {number_certificates} certifications and I'm always looking for more knowledge. I have certifications from UniEVANGÉLICA, Microsoft, Scrumstudy, Dio and Bradesco and many others. I'm always looking for new knowledge to grow as an engineer and to help my team develop projects.</p>
-          <SouthAnimation />
         </div>
       </div>
 

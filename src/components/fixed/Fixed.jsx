@@ -1,6 +1,5 @@
 import { useState } from "react";
 import './Fixed.css';
-import Icon from '../svg/logo.svg';
 
 function Fixed() {
     const [selected, setSelected] = useState("#main");
@@ -18,7 +17,7 @@ function Fixed() {
     return (
         <>
             <div className="fixed-top">
-                <img src={Icon} alt="logo_lbf" />
+                <svg />
             </div>
             <div className="menu-list">
                 <ul>
